@@ -9,5 +9,3 @@ Then run:
 ```
 npm run start
 ```
-
-Then enter a number and press Enter.
