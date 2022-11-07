@@ -1,3 +1,6 @@
+const prompt = require('prompt-sync')();
+const number = prompt('Enter a number: ');
+
 const firstTwentyStrings = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen', 'Twenty'];
 const tensStrings = ['Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety'];
 
@@ -51,9 +54,11 @@ const findLessThanArab = (num) => {
     return `${findLessThanHundred(base)} crore${isAndorComma(remainder)} ${restPart}`;
 }
 
-for (let i = -26710010; i <= -26710000; i++) {
-    const absoluteNumber = Math.abs(i);
-    const isNegative = i < 0 ? 'Minus ' : '';
+if (isNaN(parseInt(number))) {
+    console.log("That's not a number.");
+} else {
+    const absoluteNumber = Math.abs(parseInt(number));
+    const isNegative = number < 0 ? 'Minus ' : '';
 
     if (absoluteNumber === 0) {
         console.log('Zero')
