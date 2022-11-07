@@ -9,3 +9,5 @@ Then run:
 ```
 npm run start
 ```
+
+- [x] It supports negative numbers too!
